@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span >Animals</span><span class="example-spacer"></span>
+    <mat-icon class="example-icon" >emoji_nature</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div>
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8" >
+
+  <ng-container *ngFor="let column of columns; let i = index" matColumnDef="{{ column.field }}">
+    <mat-header-cell *matHeaderCellDef class="encabezado">{{ column.name }}
+
+    </mat-header-cell>
+    <mat-cell *matCellDef="let row">{{column.field != 'age'? row[column.field] : row[column.field].value + ' ' + row[column.field].text }}</mat-cell>
+  </ng-container>
+
+  <mat-header-row mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+  <!-- Group header -->
+  <ng-container matColumnDef="groupHeader">
+    <mat-cell colspan="999" *matCellDef="let group">
+      <mat-icon *ngIf="group.expanded">expand_less</mat-icon>
+      <mat-icon *ngIf="!group.expanded">expand_more</mat-icon>
+      <strong>{{group[groupByColumns[group.level-1]]}} ({{group.totalCounts}})</strong>
+    </mat-cell>
+  </ng-container>
+
+  <mat-row *matRowDef="let row; columns: ['groupHeader']; when: isGroup" (click)="groupHeaderClick(row)"> </mat-row>
+</mat-table>
+  <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[1, 5, 10]" showFirstLastButtons color="primary" ></mat-paginator>
+
+</div>

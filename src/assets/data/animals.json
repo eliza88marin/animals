@@ -1,0 +1,80 @@
+[
+  {
+    "_id_legal": "ES030305206061",
+    "date_birth": "2007-01-19T23:00:00.000Z",
+    "genus": "COW",
+    "sex": "FEMALE",
+    "name": "6061",
+    "createdAt": "2020-12-11T09:12:42.357Z",
+    "updatedAt": "2020-12-11T09:12:42.357Z",
+    "age": {
+      "text": "YEARS",
+      "value": 14
+    }
+  },
+  {
+    "_id_legal": "ES0603015138818",
+    "date_birth": "2007-01-05T23:00:00.000Z",
+    "genus": "COW",
+    "sex": "FEMALE",
+    "name": "8818",
+    "createdAt": "2020-12-11T09:14:50.583Z",
+    "updatedAt": "2020-12-11T09:14:50.583Z",
+    "age": {
+      "text": "YEARS",
+      "value": 14
+    }
+  },
+  {
+    "_id_legal": "ES040306974703",
+    "date_birth": "2013-02-19T23:00:00.000Z",
+    "genus": "COW",
+    "sex": "FEMALE",
+    "name": "4703",
+    "createdAt": "2020-12-11T09:18:07.371Z",
+    "updatedAt": "2020-12-11T09:18:07.371Z",
+    "age": {
+      "text": "YEARS",
+      "value": 8
+    }
+  },
+  {
+    "_id_legal": "ES090307471335",
+    "date_birth": "2015-11-19T23:00:00.000Z",
+    "genus": "COW",
+    "sex": "MALE",
+    "name": "1335",
+    "createdAt": "2020-12-11T09:19:40.690Z",
+    "updatedAt": "2020-12-11T09:19:40.690Z",
+    "age": {
+      "text": "YEARS",
+      "value": 5
+    }
+  },
+  {
+    "_id_legal": "ES080307141779",
+    "date_birth": "2014-02-02T23:00:00.000Z",
+    "genus": "COW",
+    "sex": "FEMALE",
+    "name": "1779",
+    "createdAt": "2020-12-11T09:23:09.358Z",
+    "updatedAt": "2020-12-11T09:23:09.358Z",
+    "age": {
+      "text": "YEARS",
+      "value": 7
+    }
+  },
+  {
+    "_id_legal": "ES080305206066",
+    "date_birth": "2007-02-02T23:00:00.000Z",
+    "genus": "COW",
+    "sex": "MALE",
+    "name": "6066",
+    "createdAt": "2020-12-11T09:24:50.103Z",
+    "updatedAt": "2020-12-11T09:24:50.103Z",
+    "age": {
+      "text": "YEARS",
+      "value": 14
+    }
+  }
+]
